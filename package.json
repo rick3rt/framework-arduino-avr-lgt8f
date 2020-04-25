@@ -1,6 +1,6 @@
 {
     "name": "framework-arduino-avr-lgt8fx",
     "description": "WAVGAT",
-    "url": "https://github.com/dbuezas/lgt8fx",
+    "url": "https://github.com/rick3rt/framework-arduino-avr-lgt8f",
     "version": "1.0.0"
 }
