@@ -1,5 +1,5 @@
-# framework-arduino-avr-lgt8fx
-framework-arduino-avr-lgt8fx for WAVGAT development in PlatformIO
+# framework-arduino-avr-lgt8f
+framework-arduino-avr-lgt8f for WAVGAT development in PlatformIO
 
 Board package is taken from https://github.com/dbuezas/lgt8fx (current version lgt8f-1.0.5)
 
@@ -10,10 +10,10 @@ Create `myboard.json`, for WAVGAT NANO AVGA328P: `wavgatnano.json`.
 ```
 {
   "build": {
-    "core": "lgt8fx",
+    "core": "lgt8f",
     "extra_flags": "-DARDUINO_AVR_NANO",
     "f_cpu": "16000000L",
-    "mcu": "avga328p",
+    "mcu": "atmega328p",
     "variant": "lgt8fx8p"
   },
   "bootloader": {
@@ -54,18 +54,18 @@ rootproject\
 ```
 
 ## Copy package to PlatformIO dir
-Copy `framework-arduino-avr-lgt8fx` package to `$userhome$/.platformio/packages`. Such that there is the `lgt8fx` package next to the `framework-arduino-avr` package.
+Copy `framework-arduino-avr-lgt8f` package to `$userhome$/.platformio/packages`. Such that there is the `lgt8f` package next to the `framework-arduino-avr` package.
 ```
 $userhome$/.platformio/packages/
     framework-arduino-avr/
-    framework-arduino-avr-lgt8fx/
+    framework-arduino-avr-lgt8f/
 ```
 
 ## Update platform.json
 Add package to `$userhome$/.platformio/platforms/atmelavr/platform.json`
 ```
 "packages": {
-    "framework-arduino-avr-lgt8fx": {
+    "framework-arduino-avr-lgt8f": {
       "type": "framework",
       "optional": true,
       "version": "1.0.0"
@@ -83,4 +83,4 @@ board = wavgatnano
 framework = arduino
 upload_protocol = arduino
 ```
-<!-- framework-package = framework-arduino-avr-lgt8fx @ https://github.com/rick3rt/framework-arduino-avr-lgt8fx.git -->
+<!-- framework-package = framework-arduino-avr-lgt8f @ https://github.com/rick3rt/framework-arduino-avr-lgt8f.git -->
