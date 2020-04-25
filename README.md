@@ -43,7 +43,7 @@ rootproject\
     .pio\
     .vscode\
     boards\
-        myboard.json
+        wavgatnano.json
     include\
     lib\
     src\
@@ -57,7 +57,7 @@ Add environment in `platformio.ini`
 ```
 [env:wavgatnano]
 platform = atmelavr
-board = nanoatmega328new
+board = wavgatnano
 framework = arduino
 framework-package = framework-arduino-avr-lgt8fx @ https://github.com/rick3rt/framework-arduino-avr-lgt8fx.git
 upload_protocol = arduino
