@@ -53,6 +53,23 @@ rootproject\
     platformio.ini
 ```
 
+## Prepare `platformio.ini`
+Create a `platformio.ini` with the following contents:
+```
+[env:wavgat]
+platform = https://github.com/rick3rt/platform-atmelavr.git
+board = wavgatnano
+framework = arduino
+platform_packages = framework-arduino-avr-lgt8f@https://github.com/rick3rt/framework-arduino-avr-lgt8f.git
+```
+and build your project.
+
+
+
+
+
+<!--
+
 ## Copy package to PlatformIO dir
 Copy `framework-arduino-avr-lgt8f` package to `$userhome$/.platformio/packages`. Such that there is the `lgt8f` package next to the `framework-arduino-avr` package.
 ```
@@ -83,4 +100,7 @@ board = wavgatnano
 framework = arduino
 upload_protocol = arduino
 ```
+
+-->
+
 <!-- framework-package = framework-arduino-avr-lgt8f @ https://github.com/rick3rt/framework-arduino-avr-lgt8f.git -->
